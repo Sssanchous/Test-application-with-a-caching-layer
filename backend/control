@@ -1,0 +1,8 @@
+Package: backend-api
+Version: 1.0.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: Your Name dgv17022005@gmail.com
+Description: Backend API service
+ Go backend API for project, managed by systemd.
