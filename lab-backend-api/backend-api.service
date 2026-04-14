@@ -1,0 +1,13 @@
+[Unit]
+Description=Backend API service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/backend-api
+Restart=always
+RestartSec=3
+Environment=CONFIG_PATH=/etc/backend-api/config.yaml
+
+[Install]
+WantedBy=multi-user.target

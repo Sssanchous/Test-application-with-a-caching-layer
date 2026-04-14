@@ -1,0 +1,14 @@
+[Unit]
+Description=Cache API service
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/cache-api
+Environment=CONFIG_PATH=/home/proxy01/cache-api/config.yaml
+ExecStart=/opt/cache-api/venv/bin/python /home/proxy01/cache-api/cache-api.py
+Restart=always
+RestartSec=3
+
+[Install]
+WanteBy=multi-user.target
